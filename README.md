@@ -32,11 +32,12 @@ Elementos utilizados no JavaScript da Validação do CPF:
 | ``const msg = document.getElementById('message');`` | O código obtém o elemento com o id message, onde será exibida a mensagem de validação.
 | ``if(validarCPF(cpf)){msg.textContent = 'O CPF é válido!';msg.style.color = 'green';}else{msg.textContent ='O CPF é inválido!';msg.style.color = 'red';}`` | A função validarCPF é chamada com o valor do CPF. Dependendo do resultado (verdadeiro ou falso), a mensagem e a cor são ajustadas para indicar se o CPF é válido ou inválido.
 
-### Parte 2: Função de Validação do CPF
+### Parte 2: Função de Validação do CPF  
+
 | Elementos | Explicações |
 | --- | --- |
-| ``function validarCPF(cpf){cpf = cpf.replace(/[^\d]+/g, ''); // Remove caracteres não numéricos`` | O código remove todos os caracteres não numéricos da string de CPF, como pontos e hífens, para deixar apenas os dígitos.
-| ``if(cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)){return false;}`` | Verifica se o CPF tem exatamente 11 dígitos e se todos os dígitos são iguais. Se não atender a essas condições, o CPF é considerado inválido e a função retorna ``false``.
+| **function validarCPF(cpf){cpf = cpf.replace(/[^\d]+/g, '');**  | O código remove todos os caracteres não numéricos da string de CPF, como pontos e hífens, para deixar apenas os dígitos.  |
+| **if(cpf.length !== 11 \|\| /^(\d)\1{10}$/.test(cpf)){return false;}**  | Verifica se o CPF tem exatamente 11 dígitos e se todos os dígitos são iguais. Se não atender a essas condições, o CPF é considerado inválido e a função retorna **false**. |  
 
 ![](img/captura.png)
 
