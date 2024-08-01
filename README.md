@@ -39,14 +39,14 @@ Elementos utilizados no JavaScript da Validação do CPF:
 | **function validarCPF(cpf){cpf = cpf.replace(/[^\d]+/g, '');**  | O código remove todos os caracteres não numéricos da string de CPF, como pontos e hífens, para deixar apenas os dígitos.  |
 | **if(cpf.length !== 11 \|\| /^(\d)\1{10}$/.test(cpf)){return false;}**  | Verifica se o CPF tem exatamente 11 dígitos e se todos os dígitos são iguais. Se não atender a essas condições, o CPF é considerado inválido e a função retorna **false**. |  
 
-![](img/captura.png)
+![](IMG/captura.png)
 
 * Calcula a Soma Ponderada:
 Itera sobre os 9 primeiros dígitos do CPF, calculando uma soma ponderada.
 * Calcula o Resto e Verifica:
 O resto da soma é calculado e ajustado para verificar o 10º dígito (primeiro dígito verificador). Se não coincidir com o dígito verificador, retorna ``false``.
 
-![](img/script2.png)
+![](IMG/script2.png)
 
 * Calcula a Soma Ponderada:
 Itera sobre todos os 10 primeiros dígitos do CPF para calcular a soma ponderada.
@@ -72,7 +72,7 @@ O resto é calculado e ajustado para verificar o 11º dígito (segundo dígito v
 
  2. Verificação do Campo de E-mail:
 
- ![](img/script3.png)
+ ![](IMG/script3.png)
 
 Aqui, o código faz uma série de verificações para validar o e-mail:
 
@@ -87,7 +87,7 @@ As verificações são feitas no primeiro formulário ``(forms[0])`` da página,
 
 4. Processamento do E-mail Válido:
 
-![](img/script4.png)
+![](IMG/script4.png)
 
 Se todas as verificações passarem, uma mensagem de sucesso é exibida. O código então seleciona o elemento com o ``id`` ``email`` e atualiza seu conteúdo HTML com o valor do e-mail inserido.
 
